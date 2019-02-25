@@ -9,7 +9,7 @@ import {IOMDBResponse} from '../services/omdbresponse';
 })
 export class OmdbApiService {
 
-   _siteURL = 'http://www.omdbapi.com/?t=';
+   _siteURL = 'https://www.omdbapi.com/?t=';
    _apiKey = '&apikey=8de6fc09';
 
   constructor(private _http: HttpClient) { 

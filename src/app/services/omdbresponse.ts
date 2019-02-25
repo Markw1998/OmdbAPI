@@ -4,4 +4,10 @@ export interface IOMDBResponse {
     Poster:string;
     Plot: string;
     Genre: string;
+    Ratings: IRatings[];
+
+}
+export interface IRatings{
+    Source: string;
+    Value: string;
 }
