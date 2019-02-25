@@ -14,5 +14,6 @@
   <img *ngIf = "movieData" src="{{movieData.Poster}} [style.height.px] = 'imageHeight'">
   <h3 *ngIf = "movieData" style="align-content: inherit">Description: {{movieData.Plot}}</h3>
   <h3 *ngIf = "movieData" style="align-content: center">Genre: {{movieData.Genre}}</h3>
-  <h3 *ngIf = "movieData" style="text-align: right">Ratings: {{movieData.Ratings[0].Source}}, {{movieData.Ratings[0].Value}}</h3>
+  <h3 *ngIf = "movieData" style="text-align: center">Ratings: {{movieData.Ratings[0].Source}}: {{movieData.Ratings[0].Value}}</h3>
+  <h3 *ngIf = "movieData" style="text-align: center">Ratings: {{movieData.Ratings[1].Source}}: {{movieData.Ratings[1].Value}}</h3>
 </div>
