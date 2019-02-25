@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OmdbApiService } from './services/omdb-api.service';
+import { IOMDBResponse } from './services/omdbresponse';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { OmdbApiService } from './services/omdb-api.service';
   providers: [OmdbApiService]
 })
 export class AppComponent {
-  movieData: any;
+  movieData: IOMDBResponse;
   errorMessage: any;
 constructor(private _omdbService: OmdbApiService){
 
