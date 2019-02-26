@@ -5,6 +5,7 @@ export interface IOMDBResponse {
     Plot: string;
     Genre: string;
     Ratings: IRatings[];
+    
 
 }
 export interface IRatings{
